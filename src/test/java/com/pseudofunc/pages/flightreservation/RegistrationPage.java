@@ -13,7 +13,7 @@ import com.pseudofunc.pages.AbstractPage;
 
 public class RegistrationPage extends AbstractPage{
 	
-	private WebDriver driver;
+	//private WebDriver driver; don't need that here anymore before of abstractpage.
 	
 	@FindBy(id="firstName")
 	private WebElement firstName;
