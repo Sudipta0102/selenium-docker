@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pseudofunc.pages.AbstractPage;
@@ -49,8 +50,14 @@ public class FlightSearchPage extends AbstractPage{
 		return this.searchFlights_button.isDisplayed();
 	}
 
-	public void selectPassengers() {
+	public void selectPassengers(String noofPassengers) {
+		Select passengerList = new Select(this.passengers_dropdown);
 		
+		passengerList.selectByValue(noofPassengers);
+	}
+	
+	public void searchFlights() {
+		this.searchFlights_button.click();
 	}
 	
 }

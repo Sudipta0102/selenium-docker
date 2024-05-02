@@ -1,7 +1,5 @@
 package com.pseudofunc.pages.flightreservation;
 
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -40,7 +38,7 @@ public class RegistrationPage extends AbstractPage{
 	private WebElement resgister_button;
 	
 	@FindBy(id="inputState")
-	private List<WebElement> state;
+	private WebElement state_dropdown;
 
 	public RegistrationPage(WebDriver driver) {
 		
