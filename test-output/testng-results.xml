@@ -1,41 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-02T22:34:32 IST" name="Default suite" finished-at="2024-05-02T22:34:42 IST" duration-ms="9638">
+  <suite started-at="2024-05-04T01:33:31 IST" name="flightReservation" finished-at="2024-05-04T01:34:04 IST" duration-ms="32753">
     <groups>
     </groups>
-    <test started-at="2024-05-02T22:34:32 IST" name="Default test" finished-at="2024-05-02T22:34:42 IST" duration-ms="9638">
-      <class name="com.pseudofunc.tests.FlightReservationTest">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.pseudofunc.tests.FlightReservationTest@7f132176]" started-at="2024-05-02T22:34:32 IST" name="setDriver" finished-at="2024-05-02T22:34:34 IST" duration-ms="2359" status="PASS">
+    <test started-at="2024-05-04T01:33:31 IST" name="passengers-count-1" finished-at="2024-05-04T01:33:39 IST" duration-ms="7879">
+      <class name="com.pseudofunc.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@1f010bf0]" started-at="2024-05-04T01:33:31 IST" name="setDriver" finished-at="2024-05-04T01:33:33 IST" duration-ms="1680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="userRegistrationTest()[pri:0, instance:com.pseudofunc.tests.FlightReservationTest@7f132176]" started-at="2024-05-02T22:34:34 IST" name="userRegistrationTest" finished-at="2024-05-02T22:34:36 IST" duration-ms="1492" status="PASS">
+        <test-method is-config="true" signature="setParams(java.lang.String,java.lang.String)[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@1f010bf0]" started-at="2024-05-04T01:33:33 IST" name="setParams" finished-at="2024-05-04T01:33:33 IST" depends-on-methods="com.pseudofunc.tests.AbstractTest.setDriver" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$584 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParams -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@1f010bf0]" started-at="2024-05-04T01:33:33 IST" name="userRegistrationTest" finished-at="2024-05-04T01:33:34 IST" duration-ms="1505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegistrationTest -->
-        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.pseudofunc.tests.FlightReservationTest@7f132176]" started-at="2024-05-02T22:34:36 IST" name="registrationConfirmationTest" finished-at="2024-05-02T22:34:38 IST" depends-on-methods="com.pseudofunc.tests.FlightReservationTest.userRegistrationTest" duration-ms="2218" status="PASS">
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@1f010bf0]" started-at="2024-05-04T01:33:34 IST" name="registrationConfirmationTest" finished-at="2024-05-04T01:33:36 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="2222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationConfirmationTest -->
-        <test-method signature="flightSearchTest()[pri:0, instance:com.pseudofunc.tests.FlightReservationTest@7f132176]" started-at="2024-05-02T22:34:38 IST" name="flightSearchTest" finished-at="2024-05-02T22:34:39 IST" depends-on-methods="com.pseudofunc.tests.FlightReservationTest.registrationConfirmationTest" duration-ms="1294" status="PASS">
+        <test-method signature="flightSearchTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@1f010bf0]" started-at="2024-05-04T01:33:36 IST" name="flightSearchTest" finished-at="2024-05-04T01:33:37 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightSearchTest -->
-        <test-method signature="flightSelectionTest()[pri:0, instance:com.pseudofunc.tests.FlightReservationTest@7f132176]" started-at="2024-05-02T22:34:39 IST" name="flightSelectionTest" finished-at="2024-05-02T22:34:40 IST" depends-on-methods="com.pseudofunc.tests.FlightReservationTest.flightSearchTest" duration-ms="732" status="PASS">
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@1f010bf0]" started-at="2024-05-04T01:33:37 IST" name="flightSelectionTest" finished-at="2024-05-04T01:33:38 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.flightSearchTest" duration-ms="730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightSelectionTest -->
-        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.pseudofunc.tests.FlightReservationTest@7f132176]" started-at="2024-05-02T22:34:40 IST" name="flightReservationConfirmationTest" finished-at="2024-05-02T22:34:41 IST" depends-on-methods="com.pseudofunc.tests.FlightReservationTest.flightSelectionTest" duration-ms="1164" status="PASS">
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@1f010bf0]" started-at="2024-05-04T01:33:38 IST" name="flightReservationConfirmationTest" finished-at="2024-05-04T01:33:38 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.flightSelectionTest" duration-ms="625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightReservationConfirmationTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.pseudofunc.tests.FlightReservationTest@7f132176]" started-at="2024-05-02T22:34:41 IST" name="quitDriver" finished-at="2024-05-02T22:34:42 IST" duration-ms="336" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@1f010bf0]" started-at="2024-05-04T01:33:38 IST" name="quitDriver" finished-at="2024-05-04T01:33:39 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- com.pseudofunc.tests.FlightReservationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.pseudofunc.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passengers-count-1 -->
+    <test started-at="2024-05-04T01:33:39 IST" name="passengers-count-2" finished-at="2024-05-04T01:33:47 IST" duration-ms="8402">
+      <class name="com.pseudofunc.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@6a55299e]" started-at="2024-05-04T01:33:39 IST" name="setDriver" finished-at="2024-05-04T01:33:39 IST" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setParams(java.lang.String,java.lang.String)[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@6a55299e]" started-at="2024-05-04T01:33:39 IST" name="setParams" finished-at="2024-05-04T01:33:39 IST" depends-on-methods="com.pseudofunc.tests.AbstractTest.setDriver" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1169 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParams -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@6a55299e]" started-at="2024-05-04T01:33:39 IST" name="userRegistrationTest" finished-at="2024-05-04T01:33:41 IST" duration-ms="1533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@6a55299e]" started-at="2024-05-04T01:33:41 IST" name="registrationConfirmationTest" finished-at="2024-05-04T01:33:42 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="1159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@6a55299e]" started-at="2024-05-04T01:33:42 IST" name="flightSearchTest" finished-at="2024-05-04T01:33:44 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="1800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@6a55299e]" started-at="2024-05-04T01:33:44 IST" name="flightSelectionTest" finished-at="2024-05-04T01:33:46 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.flightSearchTest" duration-ms="1787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@6a55299e]" started-at="2024-05-04T01:33:46 IST" name="flightReservationConfirmationTest" finished-at="2024-05-04T01:33:47 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.flightSelectionTest" duration-ms="1136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@6a55299e]" started-at="2024-05-04T01:33:47 IST" name="quitDriver" finished-at="2024-05-04T01:33:47 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.pseudofunc.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passengers-count-2 -->
+    <test started-at="2024-05-04T01:33:47 IST" name="passengers-count-3" finished-at="2024-05-04T01:33:56 IST" duration-ms="8814">
+      <class name="com.pseudofunc.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@4eb386df]" started-at="2024-05-04T01:33:47 IST" name="setDriver" finished-at="2024-05-04T01:33:48 IST" duration-ms="642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setParams(java.lang.String,java.lang.String)[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@4eb386df]" started-at="2024-05-04T01:33:48 IST" name="setParams" finished-at="2024-05-04T01:33:48 IST" depends-on-methods="com.pseudofunc.tests.AbstractTest.setDriver" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1753 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParams -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@4eb386df]" started-at="2024-05-04T01:33:48 IST" name="userRegistrationTest" finished-at="2024-05-04T01:33:49 IST" duration-ms="1460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@4eb386df]" started-at="2024-05-04T01:33:49 IST" name="registrationConfirmationTest" finished-at="2024-05-04T01:33:52 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="2234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@4eb386df]" started-at="2024-05-04T01:33:52 IST" name="flightSearchTest" finished-at="2024-05-04T01:33:53 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="1272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@4eb386df]" started-at="2024-05-04T01:33:53 IST" name="flightSelectionTest" finished-at="2024-05-04T01:33:54 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.flightSearchTest" duration-ms="717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@4eb386df]" started-at="2024-05-04T01:33:54 IST" name="flightReservationConfirmationTest" finished-at="2024-05-04T01:33:56 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.flightSelectionTest" duration-ms="2204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@4eb386df]" started-at="2024-05-04T01:33:56 IST" name="quitDriver" finished-at="2024-05-04T01:33:56 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.pseudofunc.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passengers-count-3 -->
+    <test started-at="2024-05-04T01:33:56 IST" name="passengers-count-4" finished-at="2024-05-04T01:34:04 IST" duration-ms="7637">
+      <class name="com.pseudofunc.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@289710d9]" started-at="2024-05-04T01:33:56 IST" name="setDriver" finished-at="2024-05-04T01:33:57 IST" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setParams(java.lang.String,java.lang.String)[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@289710d9]" started-at="2024-05-04T01:33:57 IST" name="setParams" finished-at="2024-05-04T01:33:57 IST" depends-on-methods="com.pseudofunc.tests.AbstractTest.setDriver" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$2338 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParams -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@289710d9]" started-at="2024-05-04T01:33:57 IST" name="userRegistrationTest" finished-at="2024-05-04T01:33:58 IST" duration-ms="1289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@289710d9]" started-at="2024-05-04T01:33:58 IST" name="registrationConfirmationTest" finished-at="2024-05-04T01:33:59 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="1175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@289710d9]" started-at="2024-05-04T01:33:59 IST" name="flightSearchTest" finished-at="2024-05-04T01:34:02 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="2330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@289710d9]" started-at="2024-05-04T01:34:02 IST" name="flightSelectionTest" finished-at="2024-05-04T01:34:02 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.flightSearchTest" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@289710d9]" started-at="2024-05-04T01:34:02 IST" name="flightReservationConfirmationTest" finished-at="2024-05-04T01:34:03 IST" depends-on-methods="com.pseudofunc.tests.flightreservation.FlightReservationTest.flightSelectionTest" duration-ms="1151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.pseudofunc.tests.flightreservation.FlightReservationTest@289710d9]" started-at="2024-05-04T01:34:03 IST" name="quitDriver" finished-at="2024-05-04T01:34:04 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.pseudofunc.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passengers-count-4 -->
+  </suite> <!-- flightReservation -->
 </testng-results>

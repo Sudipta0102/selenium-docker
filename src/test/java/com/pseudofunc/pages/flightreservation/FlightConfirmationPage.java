@@ -42,7 +42,7 @@ public class FlightConfirmationPage extends AbstractPage {
 		String price = this.totalPrice.getText();
 		
 		log.info("Flight Confirmation# : {}", flightConfirmationNumber);
-		log.info("total pprice: {}", price);
+		log.info("total price: {}", price);
 		
 		return price;
 	}

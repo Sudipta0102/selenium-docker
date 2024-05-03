@@ -1,137 +1,214 @@
-554  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-563  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+638  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\Baban\eclipse-workspace-3-sel\selenium-docker\src\test\resources\test-suites\FlightReservation.xml
+
+1161 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+1193 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+8718 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714724160012
+8719 [main] INFO  c.p.p.f.FlightConfirmationPage -- total pprice: $584 USD
+9050 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+9063 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+16345 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714724167185
+16345 [main] INFO  c.p.p.f.FlightConfirmationPage -- total pprice: $1169 USD
+16681 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+16687 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+21843 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714724172716
+21843 [main] INFO  c.p.p.f.FlightConfirmationPage -- total pprice: $1753 USD
+22168 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+22173 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+31629 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714724182784
+31629 [main] INFO  c.p.p.f.FlightConfirmationPage -- total pprice: $2338 USD
+681  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+689  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+691  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+691  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+696  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+709  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 12 ms.
+711  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+711  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+712  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+712  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+713  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+713  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+713  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+713  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+714  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+714  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+718  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+719  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+720  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+720  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+722  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+723  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+724  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+725  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+727  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+733  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 6 ms.
+735  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+735  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+735  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+735  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+748  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\Baban\AppData\Local\Temp\testng-eclipse--1748738400\testng-customsuite.xml
+
+2355 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+2381 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+4849 [main] INFO  org.testng.internal.Utils -- [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+8383 [main] INFO  c.p.p.vendorportal.DashboardPage -- Results Count: 8
+8977 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@75e09567: 23 ms
+9035 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.jq.Main@59a79443: 57 ms
+9044 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.FailedReporter@36baa049: 9 ms
+9053 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.XMLReporter@4fe533ff: 9 ms
+9061 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.EmailableReporter2@7930ffa9: 8 ms
+9069 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7c0777b5: 7 ms
+9069 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.internal.ExitCodeListener@2489e84a: 0 ms
+584  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+592  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+593  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+593  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+597  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+608  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 10 ms.
+609  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+610  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+611  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+611  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+611  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+612  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+612  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+612  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+613  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+613  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+617  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+618  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+618  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+618  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+621  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+621  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+623  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+623  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+624  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+632  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 7 ms.
+634  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+634  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+634  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+634  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+643  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\Baban\AppData\Local\Temp\testng-eclipse-1797687614\testng-customsuite.xml
+
+1120 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+1157 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+2379 [main] INFO  org.testng.internal.Utils -- [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+5717 [main] INFO  c.p.p.vendorportal.DashboardPage -- Results Count: 8
+6904 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@524a076e: 21 ms
+6956 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.jq.Main@54e2fe: 52 ms
+6956 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.FailedReporter@70972170: 0 ms
+6963 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.XMLReporter@181b8c4b: 7 ms
+6969 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.EmailableReporter2@411c6d44: 6 ms
+6974 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@5d2828c9: 5 ms
+6974 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.internal.ExitCodeListener@3a082ff4: 0 ms
+557  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+563  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 565  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 565  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-566  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-566  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-566  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-566  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-569  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-581  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 10 ms.
-581  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-581  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-582  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-582  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-582  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-582  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+570  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+583  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 13 ms.
+584  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+585  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+586  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+586  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+586  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+586  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+587  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+587  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+587  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+587  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+591  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+591  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+591  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+591  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+593  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+593  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+594  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+595  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+596  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+605  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 8 ms.
+606  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+606  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+606  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+607  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+615  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\Baban\AppData\Local\Temp\testng-eclipse-645962301\testng-customsuite.xml
+
+1083 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+1119 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+2391 [main] INFO  org.testng.internal.Utils -- [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+6432 [main] INFO  c.p.p.vendorportal.DashboardPage -- Results Count: 8
+8198 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@23f3da8b: 17 ms
+8252 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.jq.Main@4821aa9f: 54 ms
+8252 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.FailedReporter@5f481b73: 0 ms
+8258 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.XMLReporter@6cf0a747: 5 ms
+8264 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.EmailableReporter2@12d5c30e: 6 ms
+8268 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@3aa41da1: 4 ms
+8268 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.internal.ExitCodeListener@74fab04a: 0 ms
+538  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+545  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+547  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+547  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+553  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+575  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 20 ms.
+576  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+577  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+577  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+577  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+578  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+578  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+578  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+578  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+579  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+579  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+583  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+583  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+583  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+583  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 586  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 587  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-587  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-587  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 588  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-588  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-588  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-588  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-590  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-596  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 6 ms.
-597  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-598  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-598  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-598  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-607  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
-  C:\Users\Baban\AppData\Local\Temp\testng-eclipse-525021884\testng-customsuite.xml
-
-701  [main] INFO  org.testng.internal.Utils -- [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
-2197 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
-2297 [main] INFO  i.g.b.wdm.online.Downloader -- Downloading https://storage.googleapis.com/chrome-for-testing-public/124.0.6367.91/win64/chromedriver-win64.zip
-3258 [main] INFO  i.g.b.wdm.online.Downloader -- Extracting driver from compressed file chromedriver-win64.zip
-3418 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
-13059 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714656937583
-13059 [main] INFO  c.p.p.f.FlightConfirmationPage -- total pprice: $1169 USD
-13432 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@2b7e8044: 18 ms
-13468 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.jq.Main@3f598450: 36 ms
-13469 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.FailedReporter@2db2a05f: 0 ms
-13476 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.XMLReporter@1015a4b9: 7 ms
-13483 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.EmailableReporter2@a83495d: 6 ms
-13490 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@4d634127: 6 ms
-13490 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.internal.ExitCodeListener@d2e6b0b: 0 ms
-595  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-602  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-603  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-603  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-604  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-604  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-604  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-605  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-608  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
-621  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 12 ms.
-622  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-622  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-623  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-623  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-623  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-623  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-626  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-626  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-626  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-626  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-628  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-628  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-628  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-628  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-629  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-636  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 7 ms.
-638  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-638  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-639  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-639  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-647  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
-  C:\Users\Baban\AppData\Local\Temp\testng-eclipse--1625508284\testng-customsuite.xml
-
-671  [main] INFO  org.testng.internal.Utils -- [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
-1137 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
-1175 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
-10682 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714657084230
-10682 [main] INFO  c.p.p.f.FlightConfirmationPage -- total pprice: $1169 USD
-11036 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@32b0876c: 18 ms
-11085 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.jq.Main@4098dd77: 49 ms
-11086 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.FailedReporter@43aeb5e0: 1 ms
-11092 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.XMLReporter@791c12e3: 6 ms
-11097 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.EmailableReporter2@288f173f: 5 ms
-11100 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@47406941: 3 ms
-11101 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.internal.ExitCodeListener@61ecbee9: 0 ms
-558  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-565  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-566  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-566  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-572  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
-585  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 13 ms.
-587  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-588  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-588  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-588  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-589  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 589  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-589  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-589  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-590  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-590  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-593  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-593  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-593  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-593  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-595  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+591  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+592  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+594  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+594  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+594  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 595  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-597  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-597  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-598  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-606  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 7 ms.
-607  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-608  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-608  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-608  [main] INFO  org.testng.internal.Utils -- [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-621  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
-  C:\Users\Baban\AppData\Local\Temp\testng-eclipse--1026632001\testng-customsuite.xml
+604  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\Baban\AppData\Local\Temp\testng-eclipse--511274845\testng-customsuite.xml
 
-1792 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
-1807 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
-3013 [main] INFO  org.testng.internal.Utils -- [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
-9935 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714669481545
-9935 [main] INFO  c.p.p.f.FlightConfirmationPage -- total pprice: $1169 USD
-10308 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@49cb1baf: 19 ms
-10357 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.jq.Main@506aabf6: 49 ms
-10357 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.FailedReporter@5cbd94b2: 0 ms
-10363 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.XMLReporter@7c1447b5: 6 ms
-10369 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.EmailableReporter2@777d0bc3: 6 ms
-10373 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@56e9a474: 4 ms
-10373 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.internal.ExitCodeListener@45b15381: 0 ms
+1072 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+1104 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+2328 [main] INFO  org.testng.internal.Utils -- [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+5401 [main] INFO  c.p.p.vendorportal.DashboardPage -- Results Count: 8
+7149 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@bc042d5: 17 ms
+7192 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.jq.Main@38ed139b: 42 ms
+7193 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.FailedReporter@a5272be: 1 ms
+7200 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.XMLReporter@76ad6715: 7 ms
+7206 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.EmailableReporter2@41294371: 6 ms
+7210 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@ccf91df: 4 ms
+7211 [main] INFO  org.testng.internal.Utils -- [TestNG] Time taken by org.testng.internal.ExitCodeListener@117d32e: 0 ms
+621  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\Baban\eclipse-workspace-3-sel\selenium-docker\src\test\resources\test-suites\FlightReservation.xml
+
+1119 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+1160 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+8204 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714766618888
+8204 [main] INFO  c.p.p.f.FlightConfirmationPage -- total price: $584 USD
+8542 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+8548 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+16632 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714766627245
+16632 [main] INFO  c.p.p.f.FlightConfirmationPage -- total price: $1169 USD
+16948 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+16953 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+25474 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714766635942
+25475 [main] INFO  c.p.p.f.FlightConfirmationPage -- total price: $1753 USD
+25764 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 124.0.6367.91 (resolved driver for Chrome 124)
+25769 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Baban\.cache\selenium\chromedriver\win64\124.0.6367.91\chromedriver.exe
+33079 [main] INFO  c.p.p.f.FlightConfirmationPage -- Flight Confirmation# : 2024-5-1714766643602
+33079 [main] INFO  c.p.p.f.FlightConfirmationPage -- total price: $2338 USD

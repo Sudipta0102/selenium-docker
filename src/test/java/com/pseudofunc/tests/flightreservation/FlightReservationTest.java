@@ -1,12 +1,10 @@
-package com.pseudofunc.tests;
+package com.pseudofunc.tests.flightreservation;
 
 import org.testng.annotations.Test;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -15,8 +13,9 @@ import com.pseudofunc.pages.flightreservation.FlightSearchPage;
 import com.pseudofunc.pages.flightreservation.FlightsSelectionPage;
 import com.pseudofunc.pages.flightreservation.RegistrationConfirmationPage;
 import com.pseudofunc.pages.flightreservation.RegistrationPage;
+import com.pseudofunc.tests.AbstractTest;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 /*
  * just a note: i was getting one issue here. Tesng: nosuchmethodexception 
@@ -36,33 +35,20 @@ then I ran and it worked fine.
  */
 
 
-public class FlightReservationTest {
+public class FlightReservationTest extends AbstractTest{
 
-	private WebDriver driver;
+	
 	private String numOfPassengers;
 	private String totalPrice;
 	
 	@BeforeTest
 	@Parameters({"numOfPassengers", "totalPrice"})
-	public void setDriver(String numOfPassengers, String totalPrice) {
-		
-		// setup
-		ChromeOptions options = new ChromeOptions();
-		options.setBinary("C:\\Program Files\\Google\\chrome-win64\\chrome.exe");
+	public void setParams(String numOfPassengers, String totalPrice) {
 				
-		WebDriverManager.chromedriver().setup();
-		//this.driver = new ChromeDriver();
-		this.driver = new ChromeDriver(options);		
-		
 		// parameter initialization
 		this.numOfPassengers = numOfPassengers;
 		this.totalPrice = totalPrice;
 		
-	}
-	
-	@AfterTest
-	public void quitDriver() {
-		this.driver.quit();
 	}
 		
 	@Test
