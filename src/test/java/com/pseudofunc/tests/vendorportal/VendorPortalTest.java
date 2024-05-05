@@ -3,11 +3,14 @@ package com.pseudofunc.tests.vendorportal;
 import org.testng.Assert;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.pseudofunc.pages.vendorportal.DashboardPage;
 import com.pseudofunc.pages.vendorportal.LogInPage;
 import com.pseudofunc.tests.AbstractTest;
+import com.pseudofunc.tests.vendorportal.model.VendorPortalTestData;
+import com.pseudofunc.util.JSONUtil;
 
 
 
@@ -16,13 +19,16 @@ public class VendorPortalTest extends AbstractTest{
 	
 	private LogInPage loginPage;
 	private DashboardPage dashboardPage;
+	private VendorPortalTestData vendorPortalTestData; 
 	
 	@BeforeTest
-	public void setPages() {
+	@Parameters("testDataPath")
+	public void setPages(String testDataPath) {
 			
 		this.loginPage = new LogInPage(driver);
 		this.dashboardPage = new DashboardPage(driver);
-				
+		this.vendorPortalTestData = JSONUtil.getTestData(testDataPath, VendorPortalTestData.class);
+		
 	}
 	
 	
@@ -34,7 +40,7 @@ public class VendorPortalTest extends AbstractTest{
 
 		Assert.assertTrue(loginPage.isAt());
 		
-		loginPage.userCredentials("sam", "sam");
+		loginPage.userCredentials(vendorPortalTestData.username(), vendorPortalTestData.password());
 		
 		loginPage.login();
 		
@@ -47,14 +53,14 @@ public class VendorPortalTest extends AbstractTest{
 		Assert.assertTrue(dashboardPage.isAt());
 
 		//finance metrics
-		Assert.assertEquals(dashboardPage.getMonthlyEarning(), "$40,000");
-		Assert.assertEquals(dashboardPage.getAnnualEarning(), "$215,000");
-		Assert.assertEquals(dashboardPage.getProfitMargin(), "50%");
-		Assert.assertEquals(dashboardPage.getAvailableInventory(), "18");
+		Assert.assertEquals(dashboardPage.getMonthlyEarning(), vendorPortalTestData.monthly_earning());
+		Assert.assertEquals(dashboardPage.getAnnualEarning(), vendorPortalTestData.annual_earning());
+		Assert.assertEquals(dashboardPage.getProfitMargin(), vendorPortalTestData.profit_margin());
+		Assert.assertEquals(dashboardPage.getAvailableInventory(), vendorPortalTestData.available_inventory());
 		
 		//search
-		dashboardPage.searchOrderHistory("adams");
-		Assert.assertEquals(dashboardPage.getNumberOfSearchResults(), 8);
+		dashboardPage.searchOrderHistory(vendorPortalTestData.search_keyword());
+		Assert.assertEquals(dashboardPage.getNumberOfSearchResults(), vendorPortalTestData.search_count_result());
 			
 	}
 	

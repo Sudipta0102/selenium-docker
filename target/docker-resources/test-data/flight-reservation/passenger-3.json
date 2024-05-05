@@ -1,0 +1,11 @@
+{
+	"firstName": "john",
+	"lastName": "betty",
+	"email": "john.betty@sammy.com",
+	"password": "johnbetty",
+	"street": "123 MG Road",
+	"city": "Toxicity",
+	"zip": "234234",
+	"passengersCount": "3",
+	"expectedPrice": "$1753 USD"
+}

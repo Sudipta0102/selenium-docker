@@ -14,6 +14,9 @@ public class RegistrationConfirmationPage extends AbstractPage{
 	@FindBy(id="go-to-flights-search")
 	private WebElement goToFlightSearchButton;
 	
+	@FindBy(xpath="//div[@id='registration-confirmation-section']/descendant::p/b")
+	private WebElement firstNameConfirmation;
+	
 	public RegistrationConfirmationPage(WebDriver driver) {
 		super(driver);
 	}
@@ -26,6 +29,10 @@ public class RegistrationConfirmationPage extends AbstractPage{
 	public boolean isAt() {
 		this.wait.until(ExpectedConditions.visibilityOf(this.goToFlightSearchButton));
 		return this.goToFlightSearchButton.isDisplayed();
+	}
+	
+	public String getFirstName() {
+		return this.firstNameConfirmation.getText();
 	}
 	
 }
