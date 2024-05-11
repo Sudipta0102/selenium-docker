@@ -82,9 +82,11 @@
 						<selenium-grid-enabled>true</selenium-grid-enabled>
 					</systemPropertyVariables>
 					<suiteXmlFiles>
-						<file>test-suite.xml</file>
+				<!--		<file>test-suite.xml</file> -->
+							<file>src/test/resources/test-suites/FlightReservation.xml</file>
+							<file>src/test/resources/test-suites/VendorPortal.xml</file>
 					</suiteXmlFiles>
-					<threadCount>1</threadCount>
+					<threadCount>5</threadCount>
 					<reportsDirectory>target/test-output</reportsDirectory>
 				</configuration>
 			</plugin>

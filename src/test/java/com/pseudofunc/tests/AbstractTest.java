@@ -1,5 +1,6 @@
 package com.pseudofunc.tests;
 
+import com.google.common.util.concurrent.Uninterruptibles;
 import com.pseudofunc.util.Config;
 import com.pseudofunc.util.Constants;
 import org.openqa.selenium.Capabilities;
@@ -10,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -20,6 +22,7 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.time.Duration;
 
 public class AbstractTest {
 
@@ -88,4 +91,10 @@ public class AbstractTest {
 		this.driver.quit();
 	}
 
+//	@AfterMethod
+//	public void sleep(){
+//		// this is to watch the live video recording when running with grid, otherwise
+//		// the execution will be over in a flash.
+//		Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(5));
+//	}
 }
