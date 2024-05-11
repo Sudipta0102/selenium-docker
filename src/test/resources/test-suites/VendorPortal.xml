@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="vendor-portal">
+<!-- the parallel and thread count options alone isn't going to be of much help when we are going for
+remote execution, rather we also need to look for grid configuration.
+We need to increase either max concurrency within single node or we need assign more numbers of nodes. -->
+<suite name="vendor-portal" parallel="tests" thread-count="3">
 	<test name="user-sam">
 		<parameter name="testDataPath" value="test-data/vendor-portal/sam.json"></parameter>		
 		<classes>
