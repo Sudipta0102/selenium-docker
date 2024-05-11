@@ -8,13 +8,13 @@ import java.util.Properties;
 
 public class Config {
 
-    public static final Logger log = LoggerFactory.getLogger(Config.class);
-    public static final String DEFAULT_PROPERTIES = "config/default.properties";
+    private static final Logger log = LoggerFactory.getLogger(Config.class);
+    private static final String DEFAULT_PROPERTIES = "config/default.properties";
     private static Properties properties;
 
     /*
     1. Initialize will load the default properties.
-    2. Also It will check for the command-line override, meaning in the default.properties
+    2. Also it will check for the command-line override, meaning in the default.properties
     file, browser is by default set as chrome. However, if somebody wants override that via command
     line, they can do that. For example, browser can be changed to firefox and grid run can be made true
     by the following command:

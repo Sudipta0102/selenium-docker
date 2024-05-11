@@ -1,5 +1,7 @@
 package com.pseudofunc.tests.flightreservation;
 
+import com.pseudofunc.util.Config;
+import com.pseudofunc.util.Constants;
 import org.testng.annotations.Test;
 
 
@@ -54,7 +56,8 @@ public class FlightReservationTest extends AbstractTest{
 	public void userRegistrationTest() {
 		
 		RegistrationPage registrationPage = new RegistrationPage(driver);
-		registrationPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html");
+		//registrationPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html");
+		registrationPage.goTo(Config.get(Constants.FLIGHT_RESERVATION_URL));
 		Assert.assertTrue(registrationPage.isAt());
 		
 		registrationPage.enterUserDetails(flightReservationTestData.firstName(), flightReservationTestData.lastName());

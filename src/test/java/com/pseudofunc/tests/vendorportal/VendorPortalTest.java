@@ -1,5 +1,7 @@
 package com.pseudofunc.tests.vendorportal;
 
+import com.pseudofunc.util.Config;
+import com.pseudofunc.util.Constants;
 import org.testng.Assert;
 
 import org.testng.annotations.BeforeTest;
@@ -36,7 +38,8 @@ public class VendorPortalTest extends AbstractTest{
 	public void loginTest() {
 		
 		//loginPage = new LogInPage(driver);
-		loginPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html");
+		//loginPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html");
+		loginPage.goTo(Config.get(Constants.VENDOR_PORTAL_URL));
 
 		Assert.assertTrue(loginPage.isAt());
 		

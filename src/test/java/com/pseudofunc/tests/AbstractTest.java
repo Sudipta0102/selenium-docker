@@ -1,12 +1,17 @@
 package com.pseudofunc.tests;
 
+import com.pseudofunc.util.Config;
+import com.pseudofunc.util.Constants;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -17,8 +22,15 @@ import java.net.URISyntaxException;
 import java.net.URL;
 
 public class AbstractTest {
-	
+
+	private static final Logger log = LoggerFactory.getLogger(AbstractTest.class);
 	protected WebDriver driver;
+
+	@BeforeSuite
+	public void setupConfig(){
+		// it will initialize or load properties file once per suite
+		Config.initialize();
+	}
 	
 	@BeforeTest
 	public void setDriver() throws MalformedURLException, URISyntaxException {
@@ -26,23 +38,41 @@ public class AbstractTest {
 		// the code should be like System.getProperty("selenium-grid-enabled").equals("true") or false,
 		// But System.getProperty always returns a String, so instead of that, we are going to use,
 		// Boolean.getBoolean("selenium-grid-enabled")
-		if(Boolean.getBoolean("selenium-grid-enabled")){
-			this.driver = getRemoteDriver();
-		}else {
-			this.driver = getLocalChromeDriver();
-		}
+//		if(Boolean.getBoolean("selenium-grid-enabled")){
+//			this.driver = getRemoteDriver();
+//		}else {
+//			this.driver = getLocalChromeDriver();
+//		}
+
+		this.driver = Boolean.parseBoolean(Config.get(Constants.GRID_ENABLED))?getRemoteDriver():getLocalChromeDriver();
+
 	}
 
 	private WebDriver getRemoteDriver() throws MalformedURLException, URISyntaxException {
 		// http://localhost:4444/wd/hub
-		Capabilities capabilities;
-		// here we are going to access browser tag from maven surefire plugin in pom.xml
-		if(System.getProperty("browser").equalsIgnoreCase("chrome")){
-			capabilities = new ChromeOptions();
-		}else{
+//		Capabilities capabilities;
+//		// here we are going to access browser tag from maven surefire plugin in pom.xml
+//		if(System.getProperty("browser").equalsIgnoreCase("chrome")){
+//			capabilities = new ChromeOptions();
+//		}else{
+//			capabilities = new FirefoxOptions();
+//		}
+		Capabilities capabilities = new ChromeOptions();
+		if(Constants.BROWSER_FIREFOX.equalsIgnoreCase(Config.get(Constants.BROWSER)))
 			capabilities = new FirefoxOptions();
-		}
-		return new RemoteWebDriver((new URI("http://localhost:4444/wd/hub")).toURL(), capabilities);
+
+		// now to change the hard-coded URL
+		String urlFormat = Config.get(Constants.GRID_URL_FORMAT);
+		String hubHost = Config.get(Constants.GRID_HUB_HOST);
+		// default.properties file has the value as http://%s:4444/wd/hub
+		// in the following line, %s will be replaced by the value of hubHost.
+		String url = String.format(urlFormat, hubHost);
+
+		// print
+		log.info("grid-url : {}", url);
+
+		//return new RemoteWebDriver((new URI("http://localhost:4444/wd/hub")).toURL(), capabilities);
+		return new RemoteWebDriver((new URI(url)).toURL(), capabilities);
 	}
 
 	private WebDriver getLocalChromeDriver(){
@@ -55,9 +85,7 @@ public class AbstractTest {
 	
 	@AfterTest
 	public void quitDriver() {
-		
 		this.driver.quit();
-		
 	}
 
 }
