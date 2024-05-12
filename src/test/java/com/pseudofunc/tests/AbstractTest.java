@@ -1,6 +1,7 @@
 package com.pseudofunc.tests;
 
 import com.google.common.util.concurrent.Uninterruptibles;
+import com.pseudofunc.listener.TestListener;
 import com.pseudofunc.util.Config;
 import com.pseudofunc.util.Constants;
 import org.openqa.selenium.Capabilities;
@@ -11,10 +12,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+import org.testng.ITestContext;
+import org.testng.annotations.*;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -24,6 +23,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.time.Duration;
 
+@Listeners({TestListener.class})
 public class AbstractTest {
 
 	private static final Logger log = LoggerFactory.getLogger(AbstractTest.class);
@@ -36,7 +36,7 @@ public class AbstractTest {
 	}
 	
 	@BeforeTest
-	public void setDriver() throws MalformedURLException, URISyntaxException {
+	public void setDriver(ITestContext context) throws MalformedURLException, URISyntaxException {
 		// here we are going to access selenium-grid-enabled tag from maven surefire plugin in pom.xml
 		// the code should be like System.getProperty("selenium-grid-enabled").equals("true") or false,
 		// But System.getProperty always returns a String, so instead of that, we are going to use,
@@ -48,7 +48,7 @@ public class AbstractTest {
 //		}
 
 		this.driver = Boolean.parseBoolean(Config.get(Constants.GRID_ENABLED))?getRemoteDriver():getLocalChromeDriver();
-
+		context.setAttribute(Constants.DRIVER, this.driver);
 	}
 
 	private WebDriver getRemoteDriver() throws MalformedURLException, URISyntaxException {

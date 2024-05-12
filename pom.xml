@@ -79,6 +79,10 @@
 					<systemPropertyVariables>
 						<browser>chrome</browser>
 				<!--		<browser>firefox</browser>  -->
+						<!--these systemPropertyVariables are equivalent of command line
+						one can also run:
+						mvn clean test -Dselenium-grid-enabled=true -Dbrowser=firefox
+						and this will override the default values defined in default.properties-->
 						<selenium-grid-enabled>true</selenium-grid-enabled>
 					</systemPropertyVariables>
 					<suiteXmlFiles>
