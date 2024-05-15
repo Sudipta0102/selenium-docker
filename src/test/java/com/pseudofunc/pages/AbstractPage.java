@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * 1. This is generic for every page class that will extend this AbstractPage class. 
  *  
  * 		a. all the pages contain one or more private field. So if one creates the instance of any page classes,
- * by default everything will be null. To interact with these private fields, a constructor needs to be created
+ * by default everything will be null. To interact with these private fields (mostly webelement), a constructor needs to be created
  * for every page class through which we are going to accept the driver.
  * 		i.e. public pgeConstructor(WebDriver driver){} 
  *   	

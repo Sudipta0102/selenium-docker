@@ -60,6 +60,8 @@ public class AbstractTest {
 //		}else{
 //			capabilities = new FirefoxOptions();
 //		}
+
+		// by default, chrome is used.
 		Capabilities capabilities = new ChromeOptions();
 		if(Constants.BROWSER_FIREFOX.equalsIgnoreCase(Config.get(Constants.BROWSER)))
 			capabilities = new FirefoxOptions();
