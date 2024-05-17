@@ -59,7 +59,7 @@
 	<build>
 		<finalName>selenium-docker</finalName>
 		<plugins>
-			<!-- To compile the source code using specific java version. also to
+			<!-- Compiler: To compile the source code using specific java version. also to
 			force IDE to change the settings -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -69,7 +69,7 @@
 					<release>17</release>
 				</configuration>
 			</plugin>
-			<!-- To run the tests using specific parameters, change thread
+			<!-- Surefire: To run the tests using specific parameters, change thread
 			count, testng report output directory etc -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -94,7 +94,7 @@
 					<reportsDirectory>target/test-output</reportsDirectory>
 				</configuration>
 			</plugin>
-			<!-- To copy all the dependencies to run our tests as part of "mvn
+			<!-- Dependency:To copy all the dependencies to run our tests as part of "mvn
 			package" -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -108,6 +108,7 @@
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
+							<!--This name package.directory is user defined -->
 							<outputDirectory>
 								${package.directory}/libs
 							</outputDirectory>
@@ -115,23 +116,28 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- To package our page objects, test classes into jar -->
+			<!-- Jar: To package our page objects, test classes into jar -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>${maven.jar.version}</version>
 				<configuration>
-					<outputDirectory>${package.directory}</outputDirectory>
+					<outputDirectory>${package.directory}/libs</outputDirectory>
 				</configuration>
 				<executions>
 					<execution>
 						<goals>
 							<goal>test-jar</goal>
 						</goals>
+						<!-- this config is to exclude all the resources files and only
+						include test classes. Also, notice how .class files are mentioned.-->
+						<configuration>
+							<includes>**/*.class</includes>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-			<!-- To copy resources into the output directory -->
+			<!-- Resources: To copy resources into the output directory -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
