@@ -39,6 +39,8 @@
 **/*.iml
 
 **/.idea/
+**/.settings/
+**/.metadata/
 
 
 **/HELP.md
