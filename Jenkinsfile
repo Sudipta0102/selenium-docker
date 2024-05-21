@@ -18,10 +18,10 @@ pipeline{
 
         stage('push image'){
             environment{
-                            DOCKER_HUB = credentials('dockerhub-creds')
+                            DOCKER = credentials('docker')
             }
             steps{
-                bat 'echo $DOCKER_HUB_PSW | docker login -u $DOCKER_HUB_USR --password-stdin'
+                bat "docker login -u ${DOCKER_USR} -p ${DOCKER_PSW}"
                 bat "docker push pseudofunc/selindoc1"
             }
         }
