@@ -17,13 +17,18 @@ pipeline{
         }
 
         stage('push image'){
-//             environment{
-//                             DOCKER_HUB = credentials('dockerhub-creds')
-//             }
+            environment{
+                            DOCKER_HUB = credentials('dockerhub-creds')
+            }
             steps{
-                //bat 'echo ${DOCKER_HUB_PSW} | docker login -u ${DOCKER_HUB_USR} --password-stdin'
+                bat 'echo ${DOCKER_HUB_PSW} | docker login -u ${DOCKER_HUB_USR} --password-stdin'
                 bat "docker push pseudofunc/selindoc1"
             }
+        }
+    }
+    post{
+        always{
+            bat "docker logout"
         }
     }
 }
